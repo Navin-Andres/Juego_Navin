@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Plataforma</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+   
+    <style>
+        canvas {
+            background-image: url(./imagenes/arbol.jpg);
+            display: block;
+            margin: 50px auto;
+            align-items: center;
+           
+        }
+
+        .custom-navbar{
+            margin: 0;
+        }
+
+        body{
+            background-image: url(./imagenes/mono-guapo-guapo-montando-cohete-mano-paz-icono-vectorial-dibujos-animados-ilustracion-ciencia-animal-plana_138676-11164.avif);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar custom-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            JuegaloYA
+          </a>
+        </div>
+      </nav>
+
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalMessage"></p>
+            <button id="restartButton" style="display: none;">Reiniciar</button>
+        </div>
+    </div>
+
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+    <script src="mario.js"></script>
+</body>
+</html>

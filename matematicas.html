@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body class="informatica">
+
+    
+
+     <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">JuegaloYA</a>
+          
+        </li>
+        
+      </ul>
+
+
+
+      <div id="question-container" class="game-container">
+        <p id="question"></p>
+        <img id="questionImage" src="" alt="Imagen de la pregunta" class="imaganespregunta">
+        <div id="options"></div>
+        <button onclick="checkAnswer()">Reply</button>
+        <p id="message"></p>
+        <button id="restartButton" onclick="restartGame()" style="display: none;">Restart Game</button>
+    </div>
+
+    <script src="matematicas.js"></script>
+
+</body>
+</html>

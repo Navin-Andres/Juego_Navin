@@ -1,0 +1,85 @@
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(./imagenes/colornegro.jpg);
+    color: white;
+  }
+
+
+  .nav{
+    color: white;
+    font-size: 30px;
+  }
+  .nav-link:hover{
+    background-color: blue;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    
+  }
+
+
+
+
+  .nav{
+    color: aliceblue;
+    height: 90px;
+   
+    width: 100%;
+    margin: 10px;
+    padding: 0%;
+  }
+
+ .game-board {
+  display: grid;
+  grid-template-columns: repeat(2, 150px); /* Aumentar el tamaño de los botones */
+  grid-gap: 15px; /* Ajustar el espacio entre botones */
+}
+.tile {
+    width: 150px; /* Aumentar el ancho de los botones */
+    height: 150px; /* Aumentar la altura de los botones */
+    border-radius: 10px;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+  }
+
+  .tile.active {
+    opacity: 1; /* Aumenta la opacidad al activarse */
+    filter: brightness(1.5); /* Aumenta el brillo */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.8); /* Efecto de resplandor */
+  }
+  
+  .tile.green { background-color: green; }
+  .tile.red { background-color: red; }
+  .tile.yellow { background-color: yellow; }
+  .tile.blue { background-color: blue; }
+  .tile.active { opacity: 1; }
+  #start-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  #difficulty {
+    margin: 20px 0;
+    font-size: 18px;
+  }
+  
+  .custom-text{
+    color: white;
+  }
+
+  .nav-link{
+    color: white;
+  }
